@@ -1,0 +1,27 @@
+{
+  "form": {
+    "seo": {
+      "title": "About us",
+      "description": "Motive Influence's Philosophy in Influencer Marketing"
+    },
+    "separator": {
+      "home": "Home",
+      "about": "About Motive"
+    },
+    "header": "We are the biggest, high-quality instagram influencer network in Thailand",
+    "sub_header": "Motive Influence is a specialized influencer marketing service developed by Synergy E. Co., Ltd (www.synergy-e.com), high-quality digital media service providers, trusted by leading brands and agencies for more than ",
+    "sub_header_year": " years.",
+    "service_influence": {
+      "title": "We aims to provide Motive Influence services",
+      "description": "To facilitate collaborations between different brands and influencers such as bloggers, micro influencers, net idols, macro influencers, and celebrities, in order to provide interesting and extensive experiences for followers in a convenient, natural, and effective manner. At the present time, Motive Influence is the biggest, high- quality instagram influencer network in Thailand."
+    },
+    "working_guidelines": {
+      "title": "How we work",
+      "description": "Quality is what we prioritize. We believe that, for influencer marketing, quality comes before quantity. Before influencers become our members, our specialized team will conduct quality inspection in several aspects such as interests, work quality, data accuracy, followers, and engagements, in order to ensure that our customers and influencers, along with others involved, receive excellent experiences and achieve their goals."
+    },
+    "partnerwith": {
+      "title": "#partnerwith",
+      "description": "In the beginning of 2018, Motive Influence proudly implemented data disclosure standard in Thailand for the first time through the use of #partnerwith, which received a good response from the public. We believe that such data disclosure will start establishing influencer marketing service quality development and enhancement in Thailand in order to meet international standards."
+    }
+  }
+}
