@@ -5,16 +5,29 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(
-    90deg,
-    rgba(110, 218, 120, 1) 0%,
-    rgba(255, 162, 0, 1) 100%
-  );
+  background: linear-gradient(90deg, #6eda78 0%, #ffa200 100%);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+:where(.css-dev-only-do-not-override-2q8sxy).ant-btn-default:not(:disabled):not(
+    .ant-btn-disabled
+  ):hover {
+  background-color: #ffa200 !important;
+  border-color: #ffa200;
+  color: #FFFFFF;
+  
+}
+
+:where(.css-dev-only-do-not-override-2q8sxy).ant-btn-default:not(:disabled):not(
+    .ant-btn-disabled
+  ):active {
+  background-color: #6eda78 !important;
+  border-color: #6eda78;
+  color: #FFFFFF;
 }
 
 .square {

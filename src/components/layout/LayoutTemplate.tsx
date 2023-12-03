@@ -12,6 +12,7 @@ const HeaderStyle = styled(Header)`
 `;
 
 const ContentStyle = styled(Content)`
+  position: relative;
   height: calc(100vh - 50px);
   padding: 20px 50px;
   background: linear-gradient(90deg, #6eda78 0%, #ffa200 100%);

@@ -1,22 +1,21 @@
 import React, { FC, useState } from "react";
+import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import LayoutTemplate from "components/layout/LayoutTemplate";
-import { Button } from "antd";
+import { Button, Divider, Col, Row } from "antd";
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+`;
 const WrapperMoveButton = styled.div`
   display: flex;
   gap: 1rem;
   justify-content: center;
 `;
-const WrapperMoveShape = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 30%);
-  gap: 20px;
-  margin-top: 50px;
-  justify-content: center;
-`;
+const ShapeElm = styled.div``;
 const ButtonDes = styled.div`
   font-size: 12px;
   background-color: #6eda78;
@@ -35,6 +34,20 @@ const MoveButton = styled(Button)`
   justify-content: center;
   gap: 2rem;
 `;
+const ShapeButton = styled(Button)`
+  height: max-content;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+`;
+const HomeButton = styled(Button)`
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+`;
+
 const TriangleLeft = styled.div`
   width: 0;
   height: 0;
@@ -66,7 +79,8 @@ const TriangleDown = styled.div`
 
 const Shape: FC = () => {
   const { t } = useTranslation("shape");
-
+  const history = useHistory();
+  const [grid, setGrid] = useState(true);
   const [shapeList, setShapeList] = useState([
     "square",
     "circle",
@@ -75,6 +89,10 @@ const Shape: FC = () => {
     "rectangle",
     "trapezoid",
   ]);
+
+  const onMovePosition = () => {
+    setGrid(!grid);
+  };
 
   const onMoveLeft = () => {
     const shift = shapeList.shift() || "";
@@ -110,12 +128,15 @@ const Shape: FC = () => {
   return (
     <LayoutTemplate title={t("shape.title")}>
       <Wrapper>
+        <HomeButton onClick={() => history.push("/")}>
+          {t("shape.home")}
+        </HomeButton>
         <WrapperMoveButton>
           <MoveButton onClick={onMoveLeft}>
             <ButtonDes>{t("shape.move_shape")}</ButtonDes>
             <TriangleLeft />
           </MoveButton>
-          <MoveButton>
+          <MoveButton onClick={onMovePosition}>
             <ButtonDes>{t("shape.move_position")}</ButtonDes>
             <TriangleUp />
             <TriangleDown />
@@ -125,15 +146,41 @@ const Shape: FC = () => {
             <TriangleRight />
           </MoveButton>
         </WrapperMoveButton>
-        <WrapperMoveShape>
-          {shapeList.map((shape, index) => {
-            return (
-              <MoveButton key={index} onClick={onRandom}>
-                <div className={shape} />
-              </MoveButton>
-            );
-          })}
-        </WrapperMoveShape>
+        <Divider />
+        <Row justify={grid ? "end" : "center"} gutter={[16, 16]}>
+          <Col span={6}>
+            <ShapeButton onClick={onRandom}>
+              <ShapeElm className={shapeList[0]} />
+            </ShapeButton>
+          </Col>
+          <Col span={6}>
+            <ShapeButton onClick={onRandom}>
+              <ShapeElm className={shapeList[1]} />
+            </ShapeButton>
+          </Col>
+          <Col span={6}>
+            <ShapeButton onClick={onRandom}>
+              <ShapeElm className={shapeList[2]} />
+            </ShapeButton>
+          </Col>
+        </Row>
+        <Row justify={grid ? "center" : "end"} gutter={[16, 16]}>
+          <Col span={6}>
+            <ShapeButton onClick={onRandom}>
+              <ShapeElm className={shapeList[3]} />
+            </ShapeButton>
+          </Col>
+          <Col span={6}>
+            <ShapeButton onClick={onRandom}>
+              <ShapeElm className={shapeList[4]} />
+            </ShapeButton>
+          </Col>
+          <Col span={6}>
+            <ShapeButton onClick={onRandom}>
+              <ShapeElm className={shapeList[5]} />
+            </ShapeButton>
+          </Col>
+        </Row>
       </Wrapper>
     </LayoutTemplate>
   );
