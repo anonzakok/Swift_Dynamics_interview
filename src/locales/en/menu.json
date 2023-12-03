@@ -1,12 +1,12 @@
 {
   "menu": {
-    "form": {
-      "title": "Test 2",
-      "des": "Form & Table"
-    },
     "shape": {
       "title": "Test 1",
       "des": "Layout & Style"
+    },
+    "form": {
+      "title": "Test 2",
+      "des": "Form & Table"
     }
   }
 }

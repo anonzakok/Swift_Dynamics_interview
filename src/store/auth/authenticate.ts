@@ -1,5 +1,5 @@
-import i18next from 'i18next';
-import qs from 'qs';
+// import i18next from 'i18next';
+// import qs from 'qs';
 // import axios from 'shared/utils/axios';
 // import { ILoginForm } from 'shared/modules/auth/login';
 // import { StatusAlertWithHeader } from 'components/ui/Alert';

@@ -16,3 +16,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.square {
+  height: 100px;
+  width: 100px;
+  background-color: #555;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  background-color: #555;
+  border-radius: 50%;
+}
+
+.oval {
+  height: 100px;
+  width: 200px;
+  background-color: #555;
+  border-radius: 50%;
+}
+
+.parallelogram {
+  width: 150px;
+  height: 100px;
+  transform: skew(20deg);
+  background: #555;
+}
+
+.rectangle {
+  height: 100px;
+  width: 150px;
+  background-color: #555;
+}
+
+.trapezoid {
+  border-bottom: 100px solid #555;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 200px;
+}
