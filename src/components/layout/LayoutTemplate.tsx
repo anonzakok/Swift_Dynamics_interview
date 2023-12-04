@@ -16,6 +16,7 @@ const ContentStyle = styled(Content)`
   height: calc(100vh - 50px);
   padding: 20px 50px;
   background: linear-gradient(90deg, #6eda78 0%, #ffa200 100%);
+  overflow: auto;
 `;
 
 export interface LayoutTemplateProps {

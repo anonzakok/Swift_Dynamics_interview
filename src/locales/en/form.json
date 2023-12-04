@@ -36,9 +36,9 @@
         "label": "id-card",
         "placeholder": "id-card"
       },
-      "sex": {
-        "label": "sex",
-        "placeholder": "sex",
+      "gender": {
+        "label": "gender",
+        "placeholder": "gender",
         "option": {
           "male": "Male",
           "female": "Female",
@@ -62,6 +62,17 @@
       "clear": "clear",
       "delete": "delete",
       "save": "send"
+    },
+    "table": {
+      "name": "Full Name",
+      "gender": "Gender",
+      "phone": "Phone number",
+      "nationality": "nationality",
+      "action": {
+        "title": "Action",
+        "edit": "Edit",
+        "delete": "Delete"
+      }
     }
   }
 }

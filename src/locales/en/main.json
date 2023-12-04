@@ -2,5 +2,12 @@
   "lang": {
     "th": "ไทย",
     "en": "EN"
+  },
+  "alert": {
+    "success": {
+      "create": "send success",
+      "edit": "edit success",
+      "delete": "delete success"
+    }
   }
 }

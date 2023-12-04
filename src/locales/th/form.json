@@ -38,7 +38,7 @@
         "label": "เลขบัตรประชาชน",
         "placeholder": "เลขบัตรประชาชน"
       },
-      "sex": {
+      "gender": {
         "label": "เพศ",
         "placeholder": "เพศ",
         "option": {
@@ -64,6 +64,17 @@
       "clear": "ล้างข้อมูล",
       "delete": "ลบข้อมูล",
       "save": "ส่งข้อมูล"
+    },
+    "table": {
+      "name": "ชื่อ",
+      "gender": "เพศ",
+      "phone": "หมายเลขโทรศัพท์มือถือ",
+      "nationality": "สัญชาติ",
+      "action": {
+        "title": "จัดการ",
+        "edit": "แก้ไข",
+        "delete": "ลบ"
+      }
     }
   }
 }

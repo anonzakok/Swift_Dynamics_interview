@@ -1,18 +1,17 @@
-import { combineReducers, createStore, applyMiddleware } from 'redux';
-import thunkMiddleware from 'redux-thunk';
+import { combineReducers, createStore, applyMiddleware } from "redux";
+import thunkMiddleware from "redux-thunk";
 
 // reducer
-import authenticate from 'store/auth/authenticate';
+import form from 'store/form/form.reducer';
 
 // interface
-import { IAuthenticateState } from 'store/auth/authenticate';
-
+import { IFormState } from "shared/modules/form";
 export interface IReducer {
-  authenticate: IAuthenticateState;
+  form: IFormState;
 }
 
 const rootReducer = combineReducers({
-  authenticate,
+  form,
 });
 
 export default createStore(rootReducer, applyMiddleware(thunkMiddleware));
