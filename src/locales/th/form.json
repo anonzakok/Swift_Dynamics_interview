@@ -1,12 +1,69 @@
 {
-  "menu": {
-    "form": {
-      "title": "Test 2",
-      "des": "Form & Table"
+  "form": {
+    "title": "การจัดการหน้าฟอร์ม",
+    "move_shape": "เลื่อนรูปแบบ",
+    "move_position": "เปลี่ยนตำแหน่ง",
+    "home": "หน้าหลัก",
+    "input": {
+      "prefix": {
+        "label": "คำนำหน้า",
+        "placeholder": "คำนำหน้า",
+        "option": {
+          "mr": "นาย",
+          "mrs": "นาง",
+          "ms": "นางสาว"
+        }
+      },
+      "first_name": {
+        "label": "ชื่อจริง",
+        "placeholder": "ชื่อจริง"
+      },
+      "last_name": {
+        "label": "นามสกุล",
+        "placeholder": "นามสกุล"
+      },
+      "birthday": {
+        "label": "วันเกิด",
+        "placeholder": "วันเกิด"
+      },
+      "nationality": {
+        "label": "สัญชาติ",
+        "placeholder": "สัญชาติ",
+        "option": {
+          "thai": "ไทย",
+          "foreign": "ต่างชาติ"
+        }
+      },
+      "id_card": {
+        "label": "เลขบัตรประชาชน",
+        "placeholder": "เลขบัตรประชาชน"
+      },
+      "sex": {
+        "label": "เพศ",
+        "placeholder": "เพศ",
+        "option": {
+          "male": "ชาย",
+          "female": "หญิง",
+          "not_specified": "ไม่ระบุ"
+        }
+      },
+      "phone": {
+        "label": "หมายเลขโทรศัพท์มือถือ",
+        "placeholder": "หมายเลขโทรศัพท์มือถือ"
+      },
+      "passport": {
+        "label": "หนังสือเดินทาง",
+        "placeholder": "หนังสือเดินทาง"
+      },
+      "expected_salary": {
+        "label": "เงินเดือนที่คาดหวัง",
+        "placeholder": "เงินเดือนที่คาดหวัง"
+      }
     },
-    "shape": {
-      "title": "Test 1",
-      "des": "Layout & Style"
+    "button": {
+      "clear": "ล้างข้อมูล",
+      "delete": "ลบข้อมูล",
+      "save": "ส่งข้อมูล"
     }
   }
 }

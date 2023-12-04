@@ -1,12 +1,67 @@
 {
-  "menu": {
-    "form": {
-      "title": "Test 2",
-      "des": "Form & Table"
+  "form": {
+    "title": "Form & Table",
+    "home": "Home page",
+    "input": {
+      "prefix": {
+        "label": "prefix",
+        "placeholder": "prefix",
+        "option": {
+          "mr": "Mr.",
+          "mrs": "Mrs.",
+          "ms": "Ms."
+        }
+      },
+      "first_name": {
+        "label": "first-name",
+        "placeholder": "first-name"
+      },
+      "last_name": {
+        "label": "last-name",
+        "placeholder": "last-name"
+      },
+      "birthday": {
+        "label": "birthday",
+        "placeholder": "birthday"
+      },
+      "nationality": {
+        "label": "nationality",
+        "placeholder": "nationality",
+        "option": {
+          "thai": "Thai",
+          "foreign": "Foreign"
+        }
+      },
+      "id_card": {
+        "label": "id-card",
+        "placeholder": "id-card"
+      },
+      "sex": {
+        "label": "sex",
+        "placeholder": "sex",
+        "option": {
+          "male": "Male",
+          "female": "Female",
+          "not_specified": "Not specified"
+        }
+      },
+      "phone": {
+        "label": "phone-number",
+        "placeholder": "phone-number"
+      },
+      "passport": {
+        "label": "passport",
+        "placeholder": "passport"
+      },
+      "expected_salary": {
+        "label": "expected-salary",
+        "placeholder": "expected-salary"
+      }
     },
-    "shape": {
-      "title": "Test 1",
-      "des": "Layout & Style"
+    "button": {
+      "clear": "clear",
+      "delete": "delete",
+      "save": "send"
     }
   }
 }
